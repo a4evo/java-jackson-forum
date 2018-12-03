@@ -4,7 +4,6 @@ import java.time.LocalDateTime;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -18,7 +17,7 @@ import lombok.ToString;
 public class Comment {
 	String user;
 	@Setter String message;
-	@JsonFormat(pattern= "yyyy-MM-dd'T'hh:mm:ss")
+	@JsonFormat(pattern= "yyyy-MM-dd'T'HH:mm:ss")
 	LocalDateTime dateCreated;
 	int likes;
 	

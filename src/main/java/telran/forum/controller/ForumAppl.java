@@ -36,7 +36,7 @@ public class ForumAppl {
 		json = mapper.writeValueAsString(forum);	
 		System.out.println(json);
 
-		mapper.writeValue(new File("post.json"), forum);
+		mapper.writeValue(new File("forum.json"), forum);
 	}
 
 }
